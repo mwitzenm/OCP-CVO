@@ -1,5 +1,7 @@
 # Providing release images to disconnected environments
 
+**NOTE ```https://github.com/derekwaynecarr/openshift-the-easy-way/blob/master/docs/operators/02-cluster-version-operator.md as a great location to start your CVO journey```
+
 While there are a number of components to offline support, this document specifically focuses on making a release image and all related images available from a registry internal to a customer’s network.  RHCoS images can be upgraded from the contents of the release image, and so a customer will only infrequently need to redownload those images from access.redhat.com.  OLM images are not covered as part of this design.
 
 A customer should be able to retrieve the contents of a given update, mirror them to a local registry, and upgrade a cluster from that registry.
